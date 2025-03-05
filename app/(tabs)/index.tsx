@@ -1,4 +1,5 @@
-import { Image, Platform, StyleSheet } from 'react-native';
+import { Image, Platform, Pressable, StyleSheet } from 'react-native';
+import { Link } from 'expo-router';
 
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
@@ -7,6 +8,7 @@ import { HomeScreenButton } from '@/components/HomeScreenButton';
 import { useScale } from '@/hooks/useScale';
 
 export default function HomeScreen() {
+  const { scale } = useScale();
   const styles = useHomeScreenStyles();
   return (
     <ParallaxScrollView
@@ -50,6 +52,26 @@ export default function HomeScreen() {
           />
         </>
       )}
+      <ThemedView>
+        <Link href="/modal" asChild>
+          <Pressable>
+            {({ focused }) => {
+              return (
+                <ThemedText
+                  type="link"
+                  style={{
+                    fontSize: 20 * scale,
+                    opacity: focused ? 0.6 : 1.0,
+                    marginTop: 20 * scale,
+                  }}
+                >
+                  About this app
+                </ThemedText>
+              );
+            }}
+          </Pressable>
+        </Link>
+      </ThemedView>
     </ParallaxScrollView>
   );
 }
