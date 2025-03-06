@@ -84,6 +84,19 @@ export default function TabLayout() {
           tabBarIcon: () => null,
         }}
       />
+      {/* Victory-native hidden on web */}
+      <Tabs.Screen
+        name="barchart"
+        options={{
+          href: null,
+        }}
+      />
+      <Tabs.Screen
+        name="linechart"
+        options={{
+          href: null,
+        }}
+      />
     </Tabs>
   );
 }
