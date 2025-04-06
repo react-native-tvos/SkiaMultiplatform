@@ -6,11 +6,16 @@ import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { useTextStyles } from '@/hooks/useTextStyles';
 
+import TabLayoutJS from './TabLayout.web';
+import { Platform } from 'react-native';
 export const Tabs = withLayoutContext(
   createNativeBottomTabNavigator().Navigator,
 );
 
 export default function TabLayout() {
+  if (Platform.OS === 'android') {
+    return <TabLayoutJS />;
+  }
   const colorScheme = useColorScheme();
   const colors = Colors[colorScheme ?? 'light'];
 

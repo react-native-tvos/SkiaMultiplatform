@@ -5,12 +5,14 @@ import { BottomTabBarButtonProps } from '@react-navigation/bottom-tabs';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { useTextStyles } from '@/hooks/useTextStyles';
-import { useScale } from '@/hooks/useScale';
 
+/**
+ * This layout is required for the web platform.
+ * We also use this layout for Android.
+ */
 export default function TabLayout() {
   const colorScheme = useColorScheme();
   const textStyles = useTextStyles();
-  const { scale } = useScale();
 
   const tabBarButton = (props: BottomTabBarButtonProps) => {
     const style: any = props.style ?? {};
@@ -34,16 +36,11 @@ export default function TabLayout() {
         tabBarActiveBackgroundColor: Colors[colorScheme ?? 'light'].background,
         tabBarStyle: {
           width: '100%',
-          // maxWidth: Platform.OS === 'android' ? 200 * scale : 150 * scale,
         },
         tabBarPosition: 'top',
         tabBarIconStyle: {
           height: textStyles.title.lineHeight,
           width: 0,
-        },
-        tabBarItemStyle: {
-          width: 150 * scale,
-          marginLeft: Platform.OS === 'android' ? 180 * scale : 0,
         },
         headerShown: false,
       }}
@@ -85,18 +82,42 @@ export default function TabLayout() {
         }}
       />
       {/* Victory-native hidden on web */}
-      <Tabs.Screen
-        name="barchart"
-        options={{
-          href: null,
-        }}
-      />
-      <Tabs.Screen
-        name="linechart"
-        options={{
-          href: null,
-        }}
-      />
+      {Platform.OS !== 'web' ? (
+        <Tabs.Screen
+          name="barchart"
+          options={{
+            title: 'Bar Chart',
+            tabBarButton,
+            tabBarLabelStyle: textStyles.default,
+            tabBarIcon: () => null,
+          }}
+        />
+      ) : (
+        <Tabs.Screen
+          name="barchart"
+          options={{
+            href: null,
+          }}
+        />
+      )}
+      {Platform.OS !== 'web' ? (
+        <Tabs.Screen
+          name="linechart"
+          options={{
+            title: 'Line Chart',
+            tabBarButton,
+            tabBarLabelStyle: textStyles.default,
+            tabBarIcon: () => null,
+          }}
+        />
+      ) : (
+        <Tabs.Screen
+          name="linechart"
+          options={{
+            href: null,
+          }}
+        />
+      )}
     </Tabs>
   );
 }
