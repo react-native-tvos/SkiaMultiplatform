@@ -1,6 +1,7 @@
 {
   "expo": {
     "android": {
+      "edgeToEdgeEnabled": true,
       "splash": {
         "image": "./assets/images/splash.png"
       }
@@ -10,6 +11,7 @@
     },
     "icon": "./assets/tv_icons/icon-760x760.png",
     "ios": {
+      "supportsTablet": true,
       "splash": {
         "image": "./assets/images/splash.png"
       }
@@ -44,7 +46,8 @@
       ],
       "expo-router",
       "expo-font",
-      "react-native-bottom-tabs"
+      "react-native-bottom-tabs",
+      "expo-web-browser"
     ],
     "scheme": "skiamultiplatform",
     "slug": "SkiaMultiplatform",
@@ -52,6 +55,11 @@
       "bundler": "metro",
       "favicon": "./assets/images/favicon.png",
       "output": "static"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      }
     }
   }
 }
