@@ -1,6 +1,6 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Link } from 'expo-router';
-import { StyleSheet, Pressable, ViewStyle, TextStyle } from 'react-native';
+import { Pressable } from 'react-native';
 
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
@@ -13,9 +13,8 @@ import { ExternalLink } from '@/components/ExternalLink';
 export default function Modal() {
   const { scale } = useScale();
   const styles = useModalStyles();
-  const { rnVersion, routerVersion, skiaVersion } = reactNativeInfo;
-  // If the page was reloaded or navigated to directly, then the modal should be presented as
-  // a full screen page. You may need to change the UI to account for this.
+  const { expoVersion, rnVersion, routerVersion, skiaVersion } =
+    reactNativeInfo;
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#A1CEDC' }}
@@ -31,6 +30,7 @@ export default function Modal() {
         <ThemedText style={{ marginBottom: 10 * scale }} type="title">
           About this demo
         </ThemedText>
+        <ThemedText>{`expo: ${expoVersion}`}</ThemedText>
         <ThemedText>{`expo-router: ${routerVersion}`}</ThemedText>
         <ThemedText>{`react-native-tvos: ${rnVersion}`}</ThemedText>
         <ThemedText>{`react-native-skia: ${skiaVersion}`}</ThemedText>

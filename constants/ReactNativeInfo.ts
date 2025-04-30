@@ -1,4 +1,5 @@
 import { version as rnVersion } from 'react-native/package.json';
+import { version as expoVersion } from 'expo/package.json';
 import { version as routerVersion } from 'expo-router/package.json';
 import { version as skiaVersion } from '@shopify/react-native-skia/package.json';
 
@@ -15,6 +16,7 @@ const uiManager =
 
 export const reactNativeInfo = {
   rnVersion,
+  expoVersion,
   routerVersion,
   skiaVersion,
   hermesVersion,
