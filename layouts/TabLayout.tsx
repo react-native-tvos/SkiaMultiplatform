@@ -5,10 +5,12 @@ import { BottomTabBarButtonProps } from '@react-navigation/bottom-tabs';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { useTextStyles } from '@/hooks/useTextStyles';
+import { useScale } from '@/hooks/useScale';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
   const textStyles = useTextStyles();
+  const { scale } = useScale();
 
   const tabBarButton = (props: BottomTabBarButtonProps) => {
     const style: any = props.style ?? {};
@@ -32,6 +34,8 @@ export default function TabLayout() {
         tabBarActiveBackgroundColor: Colors[colorScheme ?? 'light'].background,
         tabBarStyle: {
           width: '100%',
+          height: Platform.OS === 'web' ? undefined : 60 * scale,
+          paddingTop: 0,
         },
         tabBarPosition: 'top',
         tabBarIconStyle: {
