@@ -1,0 +1,16 @@
+diff --git a/node_modules/expo-dev-menu/ios/EXDevMenuAppInfo.m b/node_modules/expo-dev-menu/ios/EXDevMenuAppInfo.m
+index a539ae4..b020719 100644
+--- a/node_modules/expo-dev-menu/ios/EXDevMenuAppInfo.m
++++ b/node_modules/expo-dev-menu/ios/EXDevMenuAppInfo.m
+@@ -64,7 +64,10 @@
+ +(NSString *)getAppIcon
+ {
+   NSString *appIcon = @"";
+-  NSString *appIconName = [[[[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIcons"] objectForKey:@"CFBundlePrimaryIcon"] objectForKey:@"CFBundleIconFiles"]  lastObject];
++  NSString *appIconName = nil;
++  @try {
++    appIconName = [[[[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIcons"] objectForKey:@"CFBundlePrimaryIcon"] objectForKey:@"CFBundleIconFiles"]  lastObject];
++  } @catch(NSException *_e) {}
+ 
+   if (appIconName != nil) {
+     NSString *resourcePath = [[NSBundle mainBundle] resourcePath];
