@@ -36,14 +36,6 @@
           }
         }
       ],
-      [
-        "expo-build-properties",
-        {
-          "ios": {
-            "useFrameworks": "static"
-          }
-        }
-      ],
       "expo-router",
       "expo-font",
       "react-native-bottom-tabs",
@@ -56,10 +48,9 @@
       "favicon": "./assets/images/favicon.png",
       "output": "static"
     },
-    "extra": {
-      "router": {
-        "origin": false
-      }
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
     }
   }
 }
