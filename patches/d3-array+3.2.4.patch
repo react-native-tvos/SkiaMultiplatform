@@ -1,0 +1,15 @@
+diff --git a/node_modules/d3-array/src/index.js b/node_modules/d3-array/src/index.js
+index 7759f6d..22648fc 100644
+--- a/node_modules/d3-array/src/index.js
++++ b/node_modules/d3-array/src/index.js
+@@ -37,7 +37,9 @@ export {default as greatestIndex} from "./greatestIndex.js";
+ export {default as scan} from "./scan.js"; // Deprecated; use leastIndex.
+ export {default as shuffle, shuffler} from "./shuffle.js";
+ export {default as sum} from "./sum.js";
+-export {default as ticks, tickIncrement, tickStep} from "./ticks.js";
++export {default as ticks} from "./ticks.js";
++export {default as tickIncrement} from "./ticks.js";
++export {default as tickStep} from "./ticks.js";
+ export {default as transpose} from "./transpose.js";
+ export {default as variance} from "./variance.js";
+ export {default as zip} from "./zip.js";
