@@ -7,7 +7,8 @@
       }
     },
     "experiments": {
-      "typedRoutes": true
+      "typedRoutes": true,
+      "reactCompiler": true
     },
     "icon": "./assets/tv_icons/icon-760x760.png",
     "ios": {
@@ -46,10 +47,6 @@
       "bundler": "metro",
       "favicon": "./assets/images/favicon.png",
       "output": "static"
-    },
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
     }
   }
 }
