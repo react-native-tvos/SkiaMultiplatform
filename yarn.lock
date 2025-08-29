@@ -791,10 +791,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@bottom-tabs/react-navigation@^0.10.0":
-  version "0.10.2"
-  resolved "https://registry.yarnpkg.com/@bottom-tabs/react-navigation/-/react-navigation-0.10.2.tgz#0cf4a481cd97c8bf81a270d25b2ef7ed47631515"
-  integrity sha512-/o/RR5yn0AYGTG+1wy2UwMVc04E3Znq5kMy77MU7hXkf8mY1DENHoiSvMNImn5AuKTNzOtjWwBk/dtKQcbMy+w==
+"@bottom-tabs/react-navigation@^0.11.0":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@bottom-tabs/react-navigation/-/react-navigation-0.11.0.tgz#53416f334feb5ab15177ee3309364b14f84101fc"
+  integrity sha512-2KPiLAbEdvEwlWW0k2UbXmdJOlQuvqPEce6kocbGcWEYMa28KQxX0QwXLxFbxef/0ybcpYVuLMMIZl1waDzovg==
   dependencies:
     color "^4.2.3"
 
@@ -5698,10 +5698,10 @@ react-is@^19.1.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-19.1.1.tgz#038ebe313cf18e1fd1235d51c87360eb87f7c36a"
   integrity sha512-tr41fA15Vn8p4X9ntI+yCyeGSf1TlYaY5vlTZfQmeLBrFo3psOPX6HhTDnFNL9uj3EhP0KAQ80cugCl4b4BERA==
 
-react-native-bottom-tabs@^0.10.0:
-  version "0.10.2"
-  resolved "https://registry.yarnpkg.com/react-native-bottom-tabs/-/react-native-bottom-tabs-0.10.2.tgz#898e0f2d7ab56943c88d1cbcafd04c2862b9e0b6"
-  integrity sha512-GoTVV0BPN7zWBpp6iQc2qDmzLTkMbn1bbqCBu+BIJzhZ6FQgX9gLzQ+vOsua56QbsTCOfG6NFOwSZtiOYjC/4A==
+react-native-bottom-tabs@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/react-native-bottom-tabs/-/react-native-bottom-tabs-0.11.0.tgz#c12c3a8445340da88098afa8db77df1de2e43c0f"
+  integrity sha512-Yt/v7zjO0P4wzOECcaW1M8VK68Y2UnMSnyk3w+Waxob0jw02JVfmUaRkgiglrdM8SEumsRnw+nBWhezzeh3LSQ==
   dependencies:
     react-freeze "^1.0.0"
     sf-symbols-typescript "^2.0.0"
