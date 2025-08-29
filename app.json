@@ -37,6 +37,14 @@
           }
         }
       ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
       "expo-router",
       "expo-font",
       "react-native-bottom-tabs",
@@ -48,6 +56,10 @@
       "bundler": "metro",
       "favicon": "./assets/images/favicon.png",
       "output": "static"
+    },
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
     }
   }
 }
