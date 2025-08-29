@@ -39,6 +39,7 @@
       ],
       "expo-router",
       "expo-font",
+      "react-native-bottom-tabs",
       "expo-web-browser"
     ],
     "scheme": "skiamultiplatform",
