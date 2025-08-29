@@ -39,7 +39,7 @@
     "postinstall-postinstall": "^2.1.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-native": "npm:react-native-tvos@0.81.0-0",
+    "react-native": "npm:react-native-tvos@0.81.1-0",
     "react-native-gesture-handler": "~2.28.0",
     "react-native-reanimated": "~4.0.1",
     "react-native-safe-area-context": "~5.6.0",
