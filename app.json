@@ -39,7 +39,8 @@
       ],
       "expo-router",
       "expo-font",
-      "expo-web-browser"
+      "expo-web-browser",
+      "expo-build-properties"
     ],
     "scheme": "skiamultiplatform",
     "slug": "SkiaMultiplatform",
