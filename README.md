@@ -12,7 +12,7 @@ This project uses
 - the [React Native TV config plugin](https://github.com/react-native-tvos/config-tv/tree/main/packages/config-tv) to allow Expo prebuild to modify the project's native files for TV builds
 - the [Shopify react-native-skia](https://shopify.github.io/react-native-skia/) package to render high performance 2D graphics.
 - the [victory-native](https://commerce.nearform.com/open-source/victory-native/) package, which uses Skia for charting and graphing data.
-- the [react-native-bottom-tabs](https://callstackincubator.github.io/react-native-bottom-tabs/) package, which provides a fully native tab navigator for mobile and TV devices. (Web uses the `@react-navigation/bottom-tabs` navigator.)
+- the [expo-router native tabs](https://docs.expo.dev/router/advanced/native-tabs/) experimental feature in Expo SDK 54.
 
 This app includes the following demos from the `react-native-skia` examples:
 
