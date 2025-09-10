@@ -7,7 +7,8 @@
       }
     },
     "experiments": {
-      "typedRoutes": true
+      "typedRoutes": true,
+      "reactCompiler": true
     },
     "icon": "./assets/tv_icons/icon-760x760.png",
     "ios": {
@@ -36,18 +37,10 @@
           }
         }
       ],
-      [
-        "expo-build-properties",
-        {
-          "ios": {
-            "useFrameworks": "static"
-          }
-        }
-      ],
       "expo-router",
       "expo-font",
-      "react-native-bottom-tabs",
-      "expo-web-browser"
+      "expo-web-browser",
+      "expo-build-properties"
     ],
     "scheme": "skiamultiplatform",
     "slug": "SkiaMultiplatform",
@@ -55,11 +48,6 @@
       "bundler": "metro",
       "favicon": "./assets/images/favicon.png",
       "output": "static"
-    },
-    "extra": {
-      "router": {
-        "origin": false
-      }
     }
   }
 }
