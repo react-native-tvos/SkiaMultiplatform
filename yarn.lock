@@ -1913,10 +1913,10 @@
   dependencies:
     nanoid "^3.3.11"
 
-"@shopify/react-native-skia@2.2.9":
-  version "2.2.9"
-  resolved "https://registry.yarnpkg.com/@shopify/react-native-skia/-/react-native-skia-2.2.9.tgz#9f85bdd60791b9365b8d5b0502ac93b4545f7d4f"
-  integrity sha512-Y05tM6fl6DJcqkLz4a3PRZK4F/CLSG0REa0q1nEU8fpa4WUn/CaILZB7iu/p/VpH2FVsR+ccHcfoX0RyAssOaA==
+"@shopify/react-native-skia@2.2.12":
+  version "2.2.12"
+  resolved "https://registry.yarnpkg.com/@shopify/react-native-skia/-/react-native-skia-2.2.12.tgz#1c27613035952772ce07418ace866b56df403546"
+  integrity sha512-P5wZSMPTp00hM0do+awNFtb5aPh5hSpodMGwy7NaxK90AV+SmUu7wZe6NGevzQIwgFa89Epn6xK3j4jKWdQi+A==
   dependencies:
     canvaskit-wasm "0.40.0"
     react-reconciler "0.31.0"

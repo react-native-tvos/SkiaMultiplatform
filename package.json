@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.2",
-    "@shopify/react-native-skia": "2.2.9",
+    "@shopify/react-native-skia": "2.2.12",
     "d3-zoom": "^3.0.0",
     "expo": "^54.0.0-preview.16",
     "expo-build-properties": "~1.0.7",
