@@ -1,7 +1,6 @@
 {
   "expo": {
     "android": {
-      "edgeToEdgeEnabled": true,
       "splash": {
         "image": "./assets/images/splash.png"
       }
@@ -18,7 +17,6 @@
       }
     },
     "name": "SkiaMultiplatform",
-    "newArchEnabled": true,
     "orientation": "portrait",
     "plugins": [
       [
