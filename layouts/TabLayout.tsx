@@ -1,4 +1,6 @@
-import { NativeTabs, Icon, Label } from 'expo-router/unstable-native-tabs';
+import { NativeTabs } from 'expo-router/build/native-tabs';
+import { Label } from 'expo-router';
+import { Icon } from 'expo-router';
 import { Platform } from 'react-native';
 
 import WebTabLayout from './TabLayout.web';
