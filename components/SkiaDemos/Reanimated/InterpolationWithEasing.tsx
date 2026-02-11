@@ -11,7 +11,7 @@ import {
 
 import { AnimationDemo, Size, Padding } from './Components';
 import { useScale } from '@/hooks/useScale';
-import { useThemeColor } from '@/hooks/useThemeColor';
+import { useThemeColor } from '@/hooks/useTheme';
 
 function mix(value: number, x: number, y: number) {
   'worklet';

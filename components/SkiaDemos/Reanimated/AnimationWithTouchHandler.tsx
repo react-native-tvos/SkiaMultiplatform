@@ -6,7 +6,7 @@ import { useSharedValue, withDecay, withTiming } from 'react-native-reanimated';
 
 import { AnimationDemo, Size, Padding } from './Components';
 import { useScale } from '@/hooks/useScale';
-import { useThemeColor } from '@/hooks/useThemeColor';
+import { useThemeColor } from '@/hooks/useTheme';
 
 export const AnimationWithTouchHandler = () => {
   const { width: windowWidth, scale } = useScale();

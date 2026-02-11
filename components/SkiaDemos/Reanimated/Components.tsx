@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 import React from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 import { ThemedText } from '@/components/ThemedText';
-import { useThemeColor } from '@/hooks/useThemeColor';
+import { useThemeColor } from '@/hooks/useTheme';
 
 export const Size = 20;
 export const Padding = 10;

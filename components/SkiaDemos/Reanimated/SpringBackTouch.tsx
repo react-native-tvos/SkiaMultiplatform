@@ -11,7 +11,7 @@ import { GestureDetector, Gesture } from 'react-native-gesture-handler';
 
 import { AnimationDemo, Size, Padding } from './Components';
 import { useScale } from '@/hooks/useScale';
-import { useThemeColor } from '@/hooks/useThemeColor';
+import { useThemeColor } from '@/hooks/useTheme';
 
 export const SpringBackTouchAnimation = () => {
   const { width: windowWidth, scale } = useScale();

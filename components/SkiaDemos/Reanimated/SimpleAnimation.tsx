@@ -10,7 +10,7 @@ import { Canvas, Fill, Rect } from '@shopify/react-native-skia';
 
 import { AnimationDemo, Size } from './Components';
 import { useScale } from '@/hooks/useScale';
-import { useThemeColor } from '@/hooks/useThemeColor';
+import { useThemeColor } from '@/hooks/useTheme';
 
 export const SimpleAnimation = () => {
   const backgroundColor = useThemeColor({}, 'background');
