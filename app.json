@@ -14,6 +14,9 @@
       "supportsTablet": true,
       "splash": {
         "image": "./assets/images/splash.png"
+      },
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "name": "SkiaMultiplatform",
@@ -46,6 +49,9 @@
       "bundler": "metro",
       "favicon": "./assets/images/favicon.png",
       "output": "static"
+    },
+    "extra": {
+      "router": {}
     }
   }
 }
