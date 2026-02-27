@@ -46,7 +46,7 @@ export default function Modal() {
         </ExternalLink>
       </ThemedView>
       {/* Use `../` as a simple way to navigate to the root. This is not analogous to "goBack". */}
-      <Link href="../" asChild>
+      <Link href="/" asChild>
         <Pressable>
           {({ focused }) => (
             <ThemedText
