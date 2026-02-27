@@ -35,7 +35,7 @@ const Ring = ({ index, progress, total }: RingProps) => {
   const R = width / 8;
   const center = useMemo(
     () => vec(width / 2 - 150 * scale, height / 2 - 100 * scale),
-    [height, width],
+    [height, width, scale],
   );
 
   const transform = useDerivedValue(() => {

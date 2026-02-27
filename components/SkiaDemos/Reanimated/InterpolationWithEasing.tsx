@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { StyleSheet } from 'react-native';
 import { Canvas, Circle, Fill } from '@shopify/react-native-skia';
 import {
   useDerivedValue,
@@ -11,7 +10,7 @@ import {
 
 import { AnimationDemo, Size, Padding } from './Components';
 import { useScale } from '@/hooks/useScale';
-import { useThemeColor } from '@/hooks/useThemeColor';
+import { useThemeColor } from '@/hooks/useTheme';
 
 function mix(value: number, x: number, y: number) {
   'worklet';

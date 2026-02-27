@@ -77,7 +77,7 @@ export default function HomeScreen() {
 }
 
 const useHomeScreenStyles = function () {
-  const { width, height, scale } = useScale();
+  const { scale } = useScale();
   return StyleSheet.create({
     titleContainer: {
       flexDirection: 'row',

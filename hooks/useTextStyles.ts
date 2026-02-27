@@ -1,5 +1,5 @@
 import { textStyles } from '@/constants/TextStyles';
-import { useThemeColor } from './useThemeColor';
+import { useThemeColor } from './useTheme';
 import { useScale } from './useScale';
 
 export function useTextStyles() {

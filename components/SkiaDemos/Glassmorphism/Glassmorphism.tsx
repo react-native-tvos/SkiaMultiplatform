@@ -24,7 +24,10 @@ export const Glassmorphism = () => {
   const height = screenHeight - 200 * scale;
   const c = vec(width / 2, height / 2);
   const r = c.x - 32;
-  const rect = useMemo(() => ({ x: 0, y: c.y, width, height }), [c.y, width]);
+  const rect = useMemo(
+    () => ({ x: 0, y: c.y, width, height }),
+    [c.y, width, height],
+  );
 
   const progress = useLoop({ duration: 2000 });
   const start = useDerivedValue(

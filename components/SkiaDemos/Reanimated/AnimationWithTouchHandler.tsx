@@ -1,12 +1,11 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
 import { Canvas, Circle, Fill } from '@shopify/react-native-skia';
 import { GestureDetector, Gesture } from 'react-native-gesture-handler';
 import { useSharedValue, withDecay, withTiming } from 'react-native-reanimated';
 
 import { AnimationDemo, Size, Padding } from './Components';
 import { useScale } from '@/hooks/useScale';
-import { useThemeColor } from '@/hooks/useThemeColor';
+import { useThemeColor } from '@/hooks/useTheme';
 
 export const AnimationWithTouchHandler = () => {
   const { width: windowWidth, scale } = useScale();

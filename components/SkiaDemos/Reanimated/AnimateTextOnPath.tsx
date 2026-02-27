@@ -1,5 +1,4 @@
 import React, { useEffect, useMemo } from 'react';
-import { StyleSheet } from 'react-native';
 import {
   Canvas,
   Fill,
@@ -17,7 +16,7 @@ import {
 
 import { AnimationDemo, Padding } from './Components';
 import { useScale } from '@/hooks/useScale';
-import { useThemeColor } from '@/hooks/useThemeColor';
+import { useThemeColor } from '@/hooks/useTheme';
 
 const ExampleHeight = 60;
 const Font = require('@/assets/fonts/SF-Mono-Semibold.otf');

@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
-import { Pressable } from 'react-native';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
 import {
   Circle,
   LinearGradient,
   useFont,
   vec,
+  Text as SKText,
 } from '@shopify/react-native-skia';
-import { TVFocusGuideView, useColorScheme } from 'react-native';
+import { Pressable, TVFocusGuideView, useColorScheme } from 'react-native';
 import { useDerivedValue, type SharedValue } from 'react-native-reanimated';
 import { Area, CartesianChart, Line, useChartPressState } from 'victory-native';
 
-import { Text as SKText } from '@shopify/react-native-skia';
+import { ThemedText } from '@/components/ThemedText';
+import { ThemedView } from '@/components/ThemedView';
+import { useScale } from '@/hooks/useScale';
+
 import { BottomSection } from './components/BottomSection';
 import { DATA, DATA2 } from './utils/data';
-import { useScale } from '@/hooks/useScale';
 
 const inter = require('@/assets/fonts/roboto.ttf');
 const interBold = require('@/assets/fonts/roboto-bold.ttf');

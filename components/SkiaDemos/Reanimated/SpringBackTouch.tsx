@@ -1,5 +1,4 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
 import { Canvas, Circle, Fill, Line } from '@shopify/react-native-skia';
 import {
   useDerivedValue,
@@ -11,7 +10,7 @@ import { GestureDetector, Gesture } from 'react-native-gesture-handler';
 
 import { AnimationDemo, Size, Padding } from './Components';
 import { useScale } from '@/hooks/useScale';
-import { useThemeColor } from '@/hooks/useThemeColor';
+import { useThemeColor } from '@/hooks/useTheme';
 
 export const SpringBackTouchAnimation = () => {
   const { width: windowWidth, scale } = useScale();

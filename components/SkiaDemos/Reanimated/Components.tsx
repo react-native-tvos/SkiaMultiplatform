@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 import React from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 import { ThemedText } from '@/components/ThemedText';
-import { useThemeColor } from '@/hooks/useThemeColor';
+import { useThemeColor } from '@/hooks/useTheme';
 
 export const Size = 20;
 export const Padding = 10;
@@ -38,9 +38,9 @@ export const AnimationDemo: React.FC<{
             button?.actions?.onPressOut && button?.actions?.onPressOut()
           }
         >
-          {({ pressed, focused }) => (
+          {({ pressed, focused, hovered }: any) => (
             <ThemedText
-              type={pressed || focused ? 'link' : 'default'}
+              type={pressed || focused || hovered ? 'link' : 'default'}
               style={{ opacity: pressed ? 0.6 : 1.0 }}
             >
               {button.title}

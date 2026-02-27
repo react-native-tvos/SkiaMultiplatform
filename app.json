@@ -1,7 +1,6 @@
 {
   "expo": {
     "android": {
-      "edgeToEdgeEnabled": true,
       "splash": {
         "image": "./assets/images/splash.png"
       }
@@ -15,10 +14,12 @@
       "supportsTablet": true,
       "splash": {
         "image": "./assets/images/splash.png"
+      },
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "name": "SkiaMultiplatform",
-    "newArchEnabled": true,
     "orientation": "portrait",
     "plugins": [
       [
@@ -48,6 +49,9 @@
       "bundler": "metro",
       "favicon": "./assets/images/favicon.png",
       "output": "static"
+    },
+    "extra": {
+      "router": {}
     }
   }
 }
