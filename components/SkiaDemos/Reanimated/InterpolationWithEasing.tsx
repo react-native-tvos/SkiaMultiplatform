@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { StyleSheet } from 'react-native';
 import { Canvas, Circle, Fill } from '@shopify/react-native-skia';
 import {
   useDerivedValue,

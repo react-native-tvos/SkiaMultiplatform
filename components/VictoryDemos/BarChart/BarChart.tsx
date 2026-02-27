@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
-
 import { CartesianChart, Bar, useChartPressState } from 'victory-native';
-import { Circle, useFont, vec } from '@shopify/react-native-skia';
 import { useColorScheme, Pressable } from 'react-native';
-import { LinearGradient, Text as SKText } from '@shopify/react-native-skia';
+import {
+  Circle,
+  useFont,
+  vec,
+  LinearGradient,
+  Text as SKText,
+} from '@shopify/react-native-skia';
 import { useDerivedValue } from 'react-native-reanimated';
+
 import { useScale } from '@/hooks/useScale';
 import { ThemedView } from '@/components/ThemedView';
 import { ThemedText } from '@/components/ThemedText';

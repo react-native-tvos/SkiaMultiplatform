@@ -38,9 +38,9 @@ export const AnimationDemo: React.FC<{
             button?.actions?.onPressOut && button?.actions?.onPressOut()
           }
         >
-          {({ pressed, focused }) => (
+          {({ pressed, focused, hovered }: any) => (
             <ThemedText
-              type={pressed || focused ? 'link' : 'default'}
+              type={pressed || focused || hovered ? 'link' : 'default'}
               style={{ opacity: pressed ? 0.6 : 1.0 }}
             >
               {button.title}

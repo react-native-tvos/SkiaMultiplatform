@@ -1,14 +1,14 @@
 import { Platform, StyleSheet, View } from 'react-native';
 
-const TVFocusGuideView = Platform.isTV
-  ? require('react-native').TVFocusGuideView
-  : View;
-
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { useScale } from '@/hooks/useScale';
-import { Colors } from '@/constants/Colors';
 import { useThemeColor } from '@/hooks/useTheme';
+
+const TVFocusGuideView = Platform.isTV
+  ? // eslint-disable-next-line @typescript-eslint/no-require-imports
+    require('react-native').TVFocusGuideView
+  : View;
 
 export const SkiaDemoScreen = ({
   title,
